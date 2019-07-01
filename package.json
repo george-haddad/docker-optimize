@@ -1,0 +1,9 @@
+{
+  "name": "docker-optimize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:george-haddad/docker-optimize.git",
+  "author": "George Haddad <george.haddad@postlight.com>",
+  "license": "Apache 2.0",
+  "private": false
+}
