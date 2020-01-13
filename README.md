@@ -84,7 +84,7 @@ fb3cabbff5af        About a minute ago   /bin/sh -c rm -rf /var/lib/apt/lists/* 
 
 The first 2 commands increased the layer size by 10.1MB and 30.8MB respectively, while the other 2 commands just created a new layer with no size decrease. This new layer just hides the files that are expected to be removed.
 
-The `chown` operation duplicated the entire layer and thus increased the size the size of the overall image along with changing the ownership of the files. It seems like a normal operation to copy files to the docker and then change the ownership, but it just doubled the size of that layer. Imagine if we copied a 300MB file or set of files totalling 300MB, that would result in a 600MB increase instead of just 300MB.
+The `chown` operation duplicated the entire layer and thus increased the size of the overall image along with changing the ownership of the files. It seems like a normal operation to copy files to the docker and then change the ownership, but it just doubled the size of that layer. Imagine if we copied a 300MB file or set of files totalling 300MB, that would result in a 600MB increase instead of just 300MB.
 
 ### optimize/docker:2.0
 
